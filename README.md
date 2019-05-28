@@ -22,12 +22,22 @@ Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
 
 ## Installation
 
+### Forking
 - [Fork this repository][fork]
 - Clone it: `git clone https://github.com/YOUR-USER/lagom`
 - Install the [GitHub Pages gem][pages] (includes Jekyll): `bundle install`
 - Run the jekyll server: `jekyll serve`
 
 You should have a server up and running locally at <http://localhost:4000>.
+
+### Remote-theme
+If you're not interested in making any changes to the theme directly, you can update the `_config.yml` file
+in your repository to replace `theme: ...` with `remote-theme: swanson/lagom`.  You can then override
+any specific files to provide your own implementation.
+
+### Combination
+You can also complete the installation using a combination of the two - Fork repo to your own account and use
+the `remote-theme: youraccount/lagom` to configure.
 
 ## Customization
 
@@ -37,12 +47,28 @@ color, stuff like that.
 
 There's a few other places that you'll want to change, too:
 
-- [CNAME][cname]: If you're using this on GitHub Pages with a custom domain name, 
-  you'll want to change this to be the domain you're going to use. All that should 
-  be in here is a domain name on the first line and nothing else (like: `example.com`).
-- [favicon.png][favicon]: This is the icon in your browser's address bar. You should 
-  change it to whatever you'd like.
-- [logo.png][logo]: A square-ish image that appears in the upper-left corner
+### Custom Domain
+[CNAME][cname]: If you're using this on GitHub Pages with a custom domain name, 
+you'll want to change this to be the domain you're going to use. All that should 
+be in here is a domain name on the first line and nothing else (like: `example.com`).
+
+### Fav Icon
+[favicon.png][favicon]: This is the icon in your browser's address bar. You should 
+change it to whatever you'd like.
+
+### Site logo
+The site logo is has a number of different configuration options, in the following priority:
+- Adding the `theme.logo` configuration item to the `_data/theme.yml` file.
+- Adding a `gravatar` link/id to the `_data/theme.yml` file.
+- Adding the file [logo.png][logo] to you repository.
+
+Site logo can be customized by overriding the `assets/css/all.css` and providing custom styles for
+`img[#avatar] { }`
+
+### Site description
+The site description can be updated using the `theme.description` or the `site.description`
+from the from `_data/theme.yml` or `_config.yml` files (respectively).  Originally the description required
+updates/overrides to the `_includes/sidebar.html` file.
 
 ## Deployment
 
