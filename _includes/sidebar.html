@@ -1,7 +1,9 @@
 <nav>
   <h1>Hi.</h1>
   <a href="/">
-    {% if site.data.theme.social.gravatar %}
+    {% if site.data.theme.icon %}
+    <img src="{{ site.data.theme.icon }}" id="avatar" alt="My photo"/>
+    {% elsif site.data.theme.social.gravatar %}
     <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
     {% else %}
     <img src="/logo.png" id="logo" alt="Blog logo"/>
