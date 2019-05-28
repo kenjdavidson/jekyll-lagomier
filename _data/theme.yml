@@ -1,33 +1,51 @@
 # Theme customization - please change from the defaults!
 
-# Color for top bar, links, etc
-highlight_color: '#3498db'
-
-# Profile links on the left sidebar, leave blank to ignore
-social:
-  github: swanson
-  #bitbucket: philipj
-  hacker_news: swanson
-  #stackexchange: 348619
-  #stackoverflow: 348619
-  twitter: _swanson
-  #facebook: zuck
-  #tumblr: animalygifs
-  #linkedin: philipjagielski
-  #gplus: 110552447039675960964
-  #gravatar: 86e6ff8f75f9daef42d53b7f8002fd95
-  #flickr: johndoe
-
 # "Hi, I'm _______"
-name: Matt Swanson
+# Changes are displayed in the sidebar/menu
+name: Lagomier User   
 email: test@example.com
-tagline: "weak opinions, strongly held"
+tagline: "Weak opinions, strongly held"
+bio: |
+  A brief bio or comment can be updated within theme.yml - removing it 
+  completely is also possible.
+logo: #http://github.com/username.png - hard coded image URL
+favicon: favicon.png
 
-# Google Analytics key, leave blank to ignore
-google_analytics_key: UA-xxxx-x
+# Social/Follow me text
+follow_me: "Follow me:"
 
-# Toggle "Postings are my own" disclaimer in footer
-show_disclaimer: true
+# Change disclaimer content - removing/clearing will stop the disclaimer
+# from being displayed.  Can be overwritten by adding disclaimer to 
+# page/post front matter
+disclaimer: |
+  The postings on this site are my own and don't necessarily represent my 
+  employer’s positions, strategies or opinions.
+
+# Control display and text on the Archive page
+archive:
+  title: Archive
+  description: |
+    Please browse through my published articles - comments and corrections are
+    always welcome.
+
+# Control display and text on the Categories page
+categories:
+  title: Categories
+  description: |
+    Please browse through my published articles - comments and corrections are
+    always welcome.    
 
 # Toggle link/icon to view atom feed (/atom.xml) in sidebar
 show_atom_feed: true
+
+# Google Analytics key, leave blank to ignore UA-xxxx-x
+google_analytics_key: 
+
+# Date format
+date_format: "%-d %b %Y"
+
+# Configure Disqus comments
+# Site name is configured on your Disqus settings screen.
+disqus:
+  site_name: kenjdavidson
+  title: Discussion & Feedback
