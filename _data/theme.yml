@@ -7,10 +7,10 @@ highlight_color: '#3498db'
 social:
   github: swanson
   #bitbucket: philipj
-  hacker_news: swanson
+  #hacker_news: swanson
   #stackexchange: 348619
   #stackoverflow: 348619
-  twitter: _swanson
+  #twitter: _swanson
   #facebook: zuck
   #tumblr: animalygifs
   #linkedin: philipjagielski
@@ -22,6 +22,7 @@ social:
 name: Matt Swanson
 email: test@example.com
 tagline: "weak opinions, strongly held"
+bio: "A breif bio or something witty - edit in theme.yml"
 #logo: http://github.com/username.png - hard coded image URL
 
 # Google Analytics key, leave blank to ignore
