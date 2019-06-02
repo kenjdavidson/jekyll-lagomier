@@ -6,8 +6,6 @@ Lagom, a [Jekyll][j] blog theme with just the right amount of style.
 
 Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
 
-
-
 * Responsive, based on [Skeleton][skeleton]
 * [Font Awesome][font-awesome] for icons
 * Open Sans from [Google web fonts][gfonts]
@@ -40,7 +38,6 @@ You can also complete the installation using a combination of the two - Fork rep
 the `remote-theme: youraccount/lagom` to configure.
 
 ## Customization
-
 Next you'll want to change a few things. Most of them can be changed directly in
 [theme.yml][config]. That's where you can add your social links, change the accent
 color, stuff like that.
@@ -71,7 +68,6 @@ from the from `_data/theme.yml` or `_config.yml` files (respectively).  Original
 updates/overrides to the `_includes/sidebar.html` file.
 
 ## Deployment
-
 You should deploy with [GitHub Pages][pages] - it's just easier.
 
 All you should have to do is rename your repository on GitHub to be
@@ -79,7 +75,6 @@ All you should have to do is rename your repository on GitHub to be
 should be able to see your new site at <http://username.github.io>.
 
 ## Licensing
-
 [MIT](https://github.com/swanson/lagom/blob/master/LICENSE) with no
 added caveats, so feel free to use this on your site without linking back to
 me or using a disclaimer or anything silly like that.
