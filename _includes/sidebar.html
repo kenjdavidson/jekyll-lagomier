@@ -1,22 +1,5 @@
-<nav>
-  <h1>Hi.</h1>
-  <a href="/">
-    {% if site.data.theme.icon %}
-    <img src="{{ site.data.theme.icon }}" id="avatar" alt="My photo"/>
-    {% elsif site.data.theme.social.gravatar %}
-    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
-    {% else %}
-    <img src="/logo.png" id="logo" alt="Blog logo"/>
-    {% endif %}
-  </a>
-  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
-  <div id="bio">
-    <p>{{ site.data.theme.bio }}</p>
-    <p>
-      Edit me in <code>_includes/sidebar.html</code>
-    </p>
-  </div>
-  <div id="social">
-    {% include social.html %}
-  </div>
+<nav id="main-nav">
+  {% include sidebar-header.html %}
+  {% include sidebar-menu.html %}
+  {% include sidebar-footer.html %}
 </nav>
