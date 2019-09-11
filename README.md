@@ -1,4 +1,6 @@
-# Lagom
+# Lagom-ier
+
+Lovingly based off [Matt Swanson](http://mdswanson.com)'s [Lagom](https://github.com/mdswanson/lagom) jekyll theme.  I've slowly been modifying the fork to a point where it made more sense to just have it be separated from the original - but without this I'd never have even gotten into the Github Pages game.
 
 > #### *Lagom* is a Swedish word with no direct English equivalent, meaning "just the right amount"
 
@@ -11,12 +13,11 @@ Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
 * Open Sans from [Google web fonts][gfonts]
 * Built-in Atom feed
 
-[![Live Demo](https://img.shields.io/badge/view-live--demo-blue.svg?style=flat-square)](http://lagom.mdswanson.com/)
+I've attempted to move all the SASS variables and hardcoded text into the theme.yml file for a more pleasant updating experience.  There may be a couple that are missing, as this is currently a work in progress.
 
 ## Action Shots
-![](http://i.imgur.com/Pmzk4j1.png)
-![](http://i.imgur.com/CT2Xvug.png)
-![](http://i.imgur.com/XisjqW1.jpg)
+
+Todo
 
 ## Installation
 
@@ -30,7 +31,7 @@ You should have a server up and running locally at <http://localhost:4000>.
 
 ### Remote-theme
 If you're not interested in making any changes to the theme directly, you can update the `_config.yml` file
-in your repository to replace `theme: ...` with `remote-theme: swanson/lagom`.  You can then override
+in your repository to replace `theme: ...` with `remote-theme: kenjdavidson/lagomier`.  You can then override
 any specific files to provide your own implementation.
 
 ### Combination
@@ -62,10 +63,13 @@ The site logo is has a number of different configuration options, in the followi
 Site logo can be customized by overriding the `assets/css/all.css` and providing custom styles for
 `img[#avatar] { }`
 
-### Site description
-The site description can be updated using the `theme.description` or the `site.description`
-from the from `_data/theme.yml` or `_config.yml` files (respectively).  Originally the description required
-updates/overrides to the `_includes/sidebar.html` file.
+### Site Content (Text)
+The following text content can be updated in theme.yml instead of searching through template/include files.  You can always override each of the template/include files, but I've tried to make the theme.yml gospel:
+
+| File | Entry | Description |
+| :--- | :--- | :--- |
+| theme.yml | description | |
+| config.yml | description | |
 
 ## Deployment
 You should deploy with [GitHub Pages][pages] - it's just easier.
@@ -80,8 +84,7 @@ added caveats, so feel free to use this on your site without linking back to
 me or using a disclaimer or anything silly like that.
 
 ## Contact
-I'd love to hear from you at [@_swanson][twitter]. Feel free to open issues if you
-run into trouble or have suggestions. Pull Requests always welcome.
+Feel free to open issues if you run into trouble or have suggestions. Pull Requests always welcome.
 
 [j]: http://jekyllrb.com/
 [mds]: http://mdswanson.com
