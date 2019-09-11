@@ -1,6 +1,6 @@
 # Lagom-ier
 
-Lovingly based off [Matt Swanson](http://mdswanson.com)'s [Lagom](https://github.com/mdswanson/lagom) jekyll theme.  I've slowly been modifying the fork to a point where it made more sense to just have it be separated from the original - but without this I'd never have even gotten into the Github Pages game.
+Lovingly based off [Matt Swanson][mds]'s [Lagom][lagom] jekyll theme.  I've slowly been modifying the fork to a point where it made more sense to just have it be separated from the original - but without this I'd never have even gotten into the Github Pages game.
 
 > #### *Lagom* is a Swedish word with no direct English equivalent, meaning "just the right amount"
 
@@ -88,6 +88,7 @@ Feel free to open issues if you run into trouble or have suggestions. Pull Reque
 
 [j]: http://jekyllrb.com/
 [mds]: http://mdswanson.com
+[lagom]: https://github.com/swanson/lagom
 [skeleton]: http://www.getskeleton.com/
 [font-awesome]: http://fortawesome.github.io/Font-Awesome/
 [gfonts]: http://www.google.com/fonts/specimen/Open+Sans
