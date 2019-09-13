@@ -7,9 +7,20 @@
 
 // Skeleton variables
 // Skeleton sass from https://github.com/whatsnewsaes/Skeleton-Sass v2.1
+// Colors overrides
+$light-grey: #e1e1e1 !default;
+$dark-grey: #333 !default;
+$primary-color: {{ site.data.theme.highlight_color }};
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$border-color: #bbb !default;
+$link-color: #1eaedb !default;
+$font-color: #222 !default;
+
+// Typography overrides
 $font-family: 'Open Sans', sans-serif;
 $font-family-ul-span: $font-family;
 
+// Breakpoints & Grid overrides
 $bp-larger-than-mobile    : "min-width: 480px" !default;
 $bp-larger-than-phablet   : "min-width: 996px" !default;
 $container-width-larger-than-mobile: 90% !default;
@@ -18,8 +29,13 @@ $container-width-larger-than-phablet: 85% !default;
 // Lagom theme variables
 // These are pulled in from the _date/theme.yml file and are used within
 // the screen.scss file
-$site_data_theme_highlight_color: {{ site.data.theme.highlight_color }};
 
 @import "skeleton";
 @import "syntax";
-@import "screen"
+@import "screen";
+
+// Font Awesome variables and imports
+$fa-font-path:        "../webfonts";
+@import "fa/fontawesome";
+@import "fa/solid";
+@import "fa/brands";

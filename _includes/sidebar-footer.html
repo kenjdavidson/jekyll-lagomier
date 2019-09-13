@@ -1,10 +1,9 @@
 <section id="nav-footer">
+  {% if site.data.theme.bio %}
   <div id="bio">
     <p>{{ site.data.theme.bio }}</p>
-    <p>
-      Edit me in <code>_includes/sidebar-footer.html</code>
-    </p>
   </div>
+  {% endif %}
   <div id="social">
     {% include social.html %}
   </div>

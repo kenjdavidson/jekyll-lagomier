@@ -1,32 +1,34 @@
 # Theme customization - please change from the defaults!
 
-# Color for top bar, links, etc
+# Color variables are passed through to Skeleton and Screen SASS files
 highlight_color: '#3498db'
 
 # Profile links on the left sidebar, leave blank to ignore
 social:
-  github: swanson
-  #bitbucket: philipj
-  #hacker_news: swanson
-  #stackexchange: 348619
-  #stackoverflow: 348619
-  #twitter: _swanson
-  #facebook: zuck
-  #tumblr: animalygifs
-  #linkedin: philipjagielski
-  #gplus: 110552447039675960964
-  #gravatar: 86e6ff8f75f9daef42d53b7f8002fd95
-  #flickr: johndoe
+  github: github_user
+  bitbucket: bitbucket_user
+  hacker_news: hacker_news_user
+  stackexchange: stack_exchange_id
+  stackoverflow: stack_overflow_id
+  twitter: twitter
+  facebook: facebook
+  tumblr: tumblr_user
+  linkedin: linkedin_user
+  gplus: gplus_id
+  gravatar: gravatar_id
+  flickr: flickr_user
 
 # "Hi, I'm _______"
-name: Matt Swanson
+name: Lagomier User
 email: test@example.com
 tagline: "weak opinions, strongly held"
 bio: "A breif bio or something witty - edit in theme.yml"
+
+# Hard coded image URL - defaults to github profile image
 #logo: http://github.com/username.png - hard coded image URL
 
-# Google Analytics key, leave blank to ignore
-google_analytics_key: UA-xxxx-x
+# Google Analytics key, leave blank to ignore UA-xxxx-x
+google_analytics_key: 
 
 # Toggle "Postings are my own" disclaimer in footer
 show_disclaimer: true

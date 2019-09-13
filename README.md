@@ -78,9 +78,12 @@ All you should have to do is rename your repository on GitHub to be
 `username.github.io`. Since everything is on the `gh-pages` branch, you
 should be able to see your new site at <http://username.github.io>.
 
+### Local Deployment
+
+`$ bundle exec jekyll serve`
+
 ## Licensing
-[MIT](https://github.com/swanson/lagom/blob/master/LICENSE) with no
-added caveats, so feel free to use this on your site without linking back to
+[MIT](LICENSE) with no added caveats, so feel free to use this on your site without linking back to
 me or using a disclaimer or anything silly like that.
 
 ## Contact
