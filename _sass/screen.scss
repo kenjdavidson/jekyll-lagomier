@@ -10,14 +10,14 @@ html, body {
 body {
   font-size: 16px;
   background-color: white;
-  color: #222222;
+  color: $font-color;
   line-height: 24px;
   margin: 0;
   border-top: 7px solid $primary_color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #181818;
+  color: $font-color;
   font-family: $font-family;
 
   &.title {
@@ -31,11 +31,11 @@ ul {
 }
 
 a {
-  color: $primary_color;
+  color: $primary-color;
   text-decoration: none;
 
   &:hover {
-    color: $primary_color;
+    color: $primary-color;
     text-decoration: underline;
   }
 
@@ -68,21 +68,21 @@ ul.posts {
 
   span {
     font-family: $font-family-ul-span;
-    color: #aaa;
+    color: lighten($font-color, 13.5%);
     padding-right: 5px;
     font-size:14px;
   }
 }
 
 .meta {
-  color: #aaa;
+  color: lighten($font-color, 13.5%);;
   margin: 0 0 10px 0;
 }
 
 .site .footer {
   font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
+  color: lighten($font-color, 26%);
+  border-top: 4px solid lighten($font-color, 13.5%);;
   overflow: hidden;
 }
 
@@ -97,7 +97,7 @@ nav h5 {
 #bio {
   margin-top: 10px;
   margin-bottom: 15px;
-  border: dotted #ddd;
+  border: dotted lighten($font-color, 13.5%);
   border-width: 1px 0;
   padding-top: 15px;
 }
