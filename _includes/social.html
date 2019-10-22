@@ -66,6 +66,12 @@ Follow me:
   </a>
   {% endif %}
 
+  {% if site.data.theme.social.skype %}
+  <a title="{{ site.data.theme.name }} on Skype" href="skype:{{site.data.theme.social.skype}}?chat">
+    <i class="fab fa-skype"></i>
+  </a>
+  {% endif %}
+
   {% if site.data.theme.show_atom_feed %}
   <a title="Atom feed" id="atom" href="/atom.xml">
     <i class="fa fa-rss-square"></i>

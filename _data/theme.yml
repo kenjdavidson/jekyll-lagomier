@@ -17,6 +17,7 @@ social:
   gplus: gplus_id
   gravatar: gravatar_id
   flickr: flickr_user
+  skype: skype_user
 
 # "Hi, I'm _______"
 name: Lagomier User
