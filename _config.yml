@@ -1,6 +1,6 @@
 # General Jekyll Config
 highlighter: rouge
 url: http://kenjdavidson.github.io/lagomier
-baseurl: http://kenjdavidson.github.io/lagomier
+baseurl: /lagomier
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
