@@ -17,6 +17,7 @@ social:
   gplus: gplus_id
   gravatar: gravatar_id
   flickr: flickr_user
+  skype: skype_user
 
 # "Hi, I'm _______"
 name: Lagomier User
@@ -35,3 +36,6 @@ show_disclaimer: true
 
 # Toggle link/icon to view atom feed (/atom.xml) in sidebar
 show_atom_feed: true
+
+# Disqus
+disqus: disqus_user
