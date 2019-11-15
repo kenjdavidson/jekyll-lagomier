@@ -21,8 +21,9 @@ social:
 # "Hi, I'm _______"
 name: Lagomier User
 email: test@example.com
-tagline: "weak opinions, strongly held"
+tagline: "Weak opinions, strongly held"
 bio: "A breif bio or something witty - edit in theme.yml"
+icon: 
 
 # Hard coded image URL - defaults to github profile image
 #logo: http://github.com/username.png - hard coded image URL

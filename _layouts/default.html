@@ -7,20 +7,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.data.theme.name }} - {{ page.title }}</title>
-  <meta name="author" content="{{ site.data.theme.name }}" />
-  <meta name="description" content="The blog of {{ site.data.theme.name }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
-  <link rel="shortcut icon" href="/favicon.png">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.data.theme.name }}" href="/atom.xml" />
 
-  <link rel="stylesheet" href="/assets/css/all.css">
+  {% include meta.html %}
+  {% include links.html %}
 </head>
 <body>
-  <div class="container">
+  <div class="container body-wrapper">
     <div class="three columns sidebar">
       {% include sidebar.html %}
     </div>
-
     <div class="nine columns content">
       {{ content }}
 
@@ -29,7 +24,12 @@
       </div>
     </div>
   </div>
+  <button class="hamburger" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
 
-{% include analytics.html %}
+  {% include analytics.html %}
 </body>
 </html>
