@@ -5,37 +5,22 @@
 // in your own *.github.io repository. 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-// Skeleton variables
-// Skeleton sass from https://github.com/whatsnewsaes/Skeleton-Sass v2.1
-// Colors overrides
-$light-grey: #e1e1e1 !default;
-$dark-grey: #333 !default;
-$primary-color: {{ site.data.theme.highlight_color }};
-$secondary-color: lighten($dark-grey, 13.5%) !default;
-$border-color: #bbb !default;
-$link-color: #1eaedb !default;
-$font-color: #222 !default;
-
-// Typography overrides
-$font-family: 'Open Sans', sans-serif;
-$font-family-ul-span: $font-family;
-
-// Breakpoints & Grid overrides
-$bp-larger-than-mobile    : "min-width: 480px" !default;
-$bp-larger-than-phablet   : "min-width: 996px" !default;
-$container-width-larger-than-mobile: 90% !default;
-$container-width-larger-than-phablet: 85% !default;
+// Lagomier theme is based on Bootstrap 4 which provides a number of theming options
+// found at https://getbootstrap.com/docs/4.3/getting-started/theming/
+// Copy this file and override values prior to @import "bootstrap/bootstrap" and
+// "lagomier" which uses the same color variables.
+$enable-responsive-font-sizes: true;                // Responsive h* and display-* 
 
 // Lagom theme variables
 // These are pulled in from the _date/theme.yml file and are used within
 // the screen.scss file
 
-@import "skeleton";
+@import "bootstrap/bootstrap";
+@import "lagomier";
 @import "syntax";
-@import "screen";
 
 // Font Awesome variables and imports
-$fa-font-path:        "../webfonts";
+$fa-font-path: "../webfonts";
 @import "fa/fontawesome";
 @import "fa/solid";
 @import "fa/brands";

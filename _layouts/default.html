@@ -12,24 +12,22 @@
   {% include links.html %}
 </head>
 <body>
-  <div class="container body-wrapper">
-    <div class="three columns sidebar">
-      {% include sidebar.html %}
-    </div>
-    <div class="nine columns content">
-      {{ content }}
-
-      <div class="footer">
-        {% include footer.html %}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 sidebar">
+        {% include sidebar.html %}
+      </div>
+      <div class="col-lg-9 content">
+        {{ content }}
+  
+        <div class="footer">
+          {% include footer.html %}
+        </div>
       </div>
     </div>
   </div>
-  <button class="hamburger" type="button">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
 
+  {% include scripts.html %}
   {% include analytics.html %}
 </body>
 </html>

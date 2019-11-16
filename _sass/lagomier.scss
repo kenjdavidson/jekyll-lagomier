@@ -10,13 +10,13 @@ html, body {
 body {
   font-size: 16px;
   background-color: white;
-  color: $font-color;
+  color: $body-color;
   line-height: 24px;
   margin: 0;
-  border-top: 7px solid $primary_color;
+  border-top: 7px solid theme-color("primary");
 }
 
-.body-wrapper {
+body > .container {
   min-height: 100vh;
 }
 
@@ -27,8 +27,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $font-color;
-  font-family: $font-family;
+  color: $body-color;
+  font-family: $font-family-base;
 
   &.title {
     font-weight: 800;
@@ -41,16 +41,16 @@ ul {
 }
 
 a {
-  color: $primary-color;
+  color: theme-color("primary");
   text-decoration: none;
 
   &:hover {
-    color: $primary-color;
+    color: theme-color("primary");
     text-decoration: underline;
   }
 
   &:visited {
-    color: $primary_color;
+    color: theme-color("primary");
   }
 }
 
@@ -77,22 +77,21 @@ ul.posts {
   }
 
   span {
-    font-family: $font-family-ul-span;
-    color: lighten($font-color, 13.5%);
+    color: lighten($body-color, 13.5%);
     padding-right: 5px;
     font-size:14px;
   }
 }
 
 .meta {
-  color: lighten($font-color, 13.5%);;
+  color: lighten($body-color, 13.5%);;
   margin: 0 0 10px 0;
 }
 
 .site .footer {
   font-size: 80%;
-  color: lighten($font-color, 26%);
-  border-top: 4px solid lighten($font-color, 13.5%);;
+  color: lighten($body-color, 26%);
+  border-top: 4px solid lighten($body-color, 13.5%);;
   overflow: hidden;
 }
 
@@ -107,7 +106,7 @@ nav h5 {
 #bio {
   margin-top: 10px;
   margin-bottom: 15px;
-  border: dotted lighten($font-color, 13.5%);
+  border: dotted lighten($body-color, 13.5%);
   border-width: 1px 0;
   padding-top: 15px;
 }
@@ -144,11 +143,12 @@ nav h5 {
   display: none;
 }
 
-@media (#{$bp-larger-than-phablet}) {
+@media (min-width: #{map-get($grid-breakpoints, lg)}) {
   .sidebar {
     display: block;
     padding-top: 25px;
-    font-family: $font-family;
+    padding-right: 40px;
+    font-family: $font-family-base;
   }
   
   .sidebar p {
@@ -161,12 +161,12 @@ nav h5 {
 }
 
 .content {
-  font: 400 16px/22px $font-family;
+  font: 400 16px/22px $font-family-base;
   padding-top: 25px;
   min-height: 400px;
 }
 
-@media (#{$bp-larger-than-phablet}) {
+@media (min-width: #{map-get($grid-breakpoints, lg)}) {
   .content {    
     border-left: 1px solid #DDD;
     padding-left: 40px;
@@ -219,11 +219,11 @@ nav h5 {
 
 #stalker a:hover {
   text-decoration: none;
-  color: $primary_color;
+  color: theme-color("primary");
 }
 
 i.fa-hn {
-  font-family: $font-family;
+  font-family: $font-family-base;
   text-align: center;
   font-size: 18px !important;
   position: relative;
