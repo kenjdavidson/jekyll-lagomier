@@ -1,38 +1,28 @@
 # Theme customization - please change from the defaults!
 
-# Color variables are passed through to Skeleton and Screen SASS files
-highlight_color: '#3498db'
-
-# Profile links on the left sidebar, leave blank to ignore
-social:
-  github: github_user
-  bitbucket: bitbucket_user
-  hacker_news: hacker_news_user
-  stackexchange: stack_exchange_id
-  stackoverflow: stack_overflow_id
-  twitter: twitter
-  facebook: facebook
-  tumblr: tumblr_user
-  linkedin: linkedin_user
-  gplus: gplus_id
-  gravatar: gravatar_id
-  flickr: flickr_user
-
 # "Hi, I'm _______"
-name: Lagomier User
+# Changes are displayed in the sidebar/menu
+name: Lagomier User   
 email: test@example.com
 tagline: "Weak opinions, strongly held"
-bio: "A breif bio or something witty - edit in theme.yml"
-icon: 
+bio: |
+  A brief bio or comment can be updated within theme.yml - removing it 
+  completely is also possible.
+logo: #http://github.com/username.png - hard coded image URL
+favicon: favicon.png
 
-# Hard coded image URL - defaults to github profile image
-#logo: http://github.com/username.png - hard coded image URL
+# Social/Follow me text
+follow_me: "Follow me:"
 
-# Google Analytics key, leave blank to ignore UA-xxxx-x
-google_analytics_key: 
-
-# Toggle "Postings are my own" disclaimer in footer
-show_disclaimer: true
+# Change disclaimer content - removing/clearing will stop the disclaimer
+# from being displayed.  Can be overwritten by adding disclaimer to 
+# page/post front matter
+disclaimer: |
+  The postings on this site are my own and don't necessarily represent my 
+  employer’s positions, strategies or opinions.
 
 # Toggle link/icon to view atom feed (/atom.xml) in sidebar
 show_atom_feed: true
+
+# Google Analytics key, leave blank to ignore UA-xxxx-x
+google_analytics_key: 

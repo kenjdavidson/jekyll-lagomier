@@ -20,10 +20,16 @@ body > .container {
   min-height: 100vh;
 }
 
-.hamburger {
-  position: absolute;
-  bottom: 1em;
-  
+blockquote {
+  border-left: 2px solid gray("600");
+  padding-top: 0.5rem; padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  color: gray("600");
+  font-style: italic;
+
+  p {
+    margin-bottom: 0px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,17 +42,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul {
-  margin: 1em 0;
+  margin: 1em 0em 1em 1em;
   list-style: disc;
 }
 
 a {
   color: theme-color("primary");
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     color: theme-color("primary");
-    text-decoration: underline;
   }
 
   &:visited {
@@ -65,24 +70,6 @@ img {
   margin-right: auto;
 }
 
-ul.posts {
-  margin-top: 0;
-  list-style-type: none;
-  margin-bottom: 10px;
-
-  li {
-    line-height: 22px;
-    font-size: 16px;
-    margin-bottom: 0px;
-  }
-
-  span {
-    color: lighten($body-color, 13.5%);
-    padding-right: 5px;
-    font-size:14px;
-  }
-}
-
 .meta {
   color: lighten($body-color, 13.5%);;
   margin: 0 0 10px 0;
@@ -95,32 +82,12 @@ ul.posts {
   overflow: hidden;
 }
 
-nav h1, 
-nav h2,
-nav h3,
-nav h4,
-nav h5 {
-  text-align: center;
-}
-
 #bio {
   margin-top: 10px;
   margin-bottom: 15px;
   border: dotted lighten($body-color, 13.5%);
   border-width: 1px 0;
   padding-top: 15px;
-}
-
-#social {
-  margin-bottom: 10px;
-  font-size: 13px;
-}
-
-#post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-  margin-bottom: 20px !important;
 }
 
 #post ul,
@@ -141,6 +108,37 @@ nav h5 {
 
 .sidebar {
   display: none;
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  a,
+  a:hover,
+  a:active {
+    text-decoration: none;
+
+    i {
+      width: 1.5em;
+    }
+  }
+
+  nav {
+    margin: 15px 0px;
+    padding-top: 15px;
+    border: dotted #40474f;
+    border-width: 1px 0px 0px 0px;
+  }
+
+  ul {
+    margin: 0px;
+    list-style: none;
+  }
+}
+
+.sidebar > section {
+  position: sticky;
+  top: 32px;
 }
 
 @media (min-width: #{map-get($grid-breakpoints, lg)}) {
@@ -201,25 +199,32 @@ nav h5 {
 }
 
 #stalker {
-  display: inline-block;
-  height: 18px;
-  margin-left: 5px;
-}
+  span {
+    display: block;
+  }
 
-#stalker a {
-  width: 29px;
-  overflow: hidden;
-  float: left;
-}
-
-#stalker i {
-  font-size: 28px;
-  margin-right: 5px;
-}
-
-#stalker a:hover {
-  text-decoration: none;
-  color: theme-color("primary");
+  ul {
+    display: inline-block;
+    height: 18px;
+    margin-left: 5px;
+    margin: 0px;
+  
+    a {
+      width: 29px;
+      overflow: hidden;
+      float: left;
+  
+      &:hover {
+        text-decoration: none;
+        color: theme-color("primary");
+      }
+    }
+  
+    i {
+      font-size: 28px;
+      margin-right: 5px;
+    }
+  }
 }
 
 i.fa-hn {

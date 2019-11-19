@@ -10,6 +10,12 @@
 // Copy this file and override values prior to @import "bootstrap/bootstrap" and
 // "lagomier" which uses the same color variables.
 $enable-responsive-font-sizes: true;                // Responsive h* and display-* 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 962px
+) !default;
 
 // Lagom theme variables
 // These are pulled in from the _date/theme.yml file and are used within

@@ -1,13 +1,13 @@
 <section id="nav-header">
   <h3>Hi.</h3>
   <a href="/">
-    {% if site.data.theme.icon %}
+    {% if site.data.theme.logo %}
     <img src="{{ site.data.theme.icon }}" id="avatar" alt="{{ site.data.theme.name }}" />
     {% elsif site.data.theme.social.gravatar %}
     <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar"
       alt="{{ site.data.theme.name }}" />
     {% else %}
-    <img src="/logo.png" id="logo" alt="{{ site.data.theme.name }}" />
+    <img src="/assets/img/logo.png" id="logo" alt="{{ site.data.theme.name }}" />
     {% endif %}
   </a>
   <h5>I'm <a href="/">{{ site.data.theme.name }}</a>.</h5>

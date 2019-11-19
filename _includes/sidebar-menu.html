@@ -1,3 +1,15 @@
-<section id="nav-menu">
-    
-</section>
+{% if site.data.menu.size > 0 %}
+<nav id="main-menu">
+    <ul>
+    {% for item in site.data.menu %}
+    {% assign p = site.docs | where:"title", item.title | first %}
+    <li>
+        <a href="{{ p.url }}">
+            <i class="{{ item.icon }}"></i>
+            <span>{{ item.title }}</span>
+        </a>
+    </li>
+    {% endfor %}
+    </ul>
+</nav>
+{% endif %}
