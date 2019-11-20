@@ -176,6 +176,7 @@ img {
 }
 
 .footer {
+  margin-top: 1em;
   font-size: 80%;
   color: #666;
   border-top: 4px solid #EEE;
@@ -274,4 +275,29 @@ i.fa-hn {
 sup {
   vertical-align: super;
   font-size: smaller;
+}
+
+// Archive and Categories page styles
+.archive-year {
+  margin-top: 0.5em;
+}
+
+.category-title {
+  margin-top: 0.5em;
+}
+
+.archive-post-item {
+  display: flex;
+
+  .date {
+    &:after {
+      content: "\00BB";      
+    }
+
+    margin-right: 0.5em;
+  }
+
+  .title {
+    margin-right: 0.5em;
+  }
 }

@@ -3,17 +3,17 @@ layout: default
 ---
 
 <section class="post">
-  <p class="meta">
-    <h1 class="title">{{ page.title }}</h1>
-    <span class="date"><i class="fas fa-calendar-day"></i> {{ page.date | date: "%B %d, %Y" }}</span>
-    <span class="tags"><i class="fas fa-tag"></i> {{ page.tags | join: ", " }}</span>
+  <p class="header">
+    <h1>{{ page.title }}</h1>
+    <span class="date">{{ page.date | date: site.data.theme.date_format }}</span>
+    <span class="tags">{{ page.tags | join: ", " }}</span>
   </p>
 
-  <div id="post">
+  <div class="body">
     {{ content }}
   </div>
 
-  <div id="related">
+  <div class="related">
     <h3>Related Posts</h3>
     <ul class="posts">
       {% for post in site.related_posts limit:3 %}

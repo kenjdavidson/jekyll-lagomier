@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Another sample
-categories: []
-tags: [sample, tag]
+categories: [Category1]
+tags: [Jekyll, Post, Sample]
 ---
 
 Tattooed roof party *vinyl* freegan single-origin coffee wayfarers tousled, umami yr 
