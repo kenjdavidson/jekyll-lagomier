@@ -1,0 +1,41 @@
+#fab-wrapper {
+  position: fixed;
+  bottom: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+
+  #fab-menu {
+    background: transparent;
+    border: 0px;
+    width: 56px;
+
+    img {
+      margin: 0px;
+      box-shadow: 1px 1px 10px black;
+      border-radius: 50%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: #{map-get($grid-breakpoints, lg)}) {
+  #fab-wrapper {
+    display: none;
+  }
+}
+
+button#fab-menu:focus,
+button#fab-menu img:focus {
+  outline: none;
+}
+
+button#fab-menu {
+	transition: transform 2s ease-out;
+}
+
+body.scrolled button#fab-menu {
+  opacity: 0;
+}

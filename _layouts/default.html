@@ -10,7 +10,7 @@
   {% include links.html %}
 </head>
 <body>
-  <div class="container">
+  <div id="body-wrapper" class="container">
     <div class="row">
       <div class="col-lg-3 sidebar">
         {% include sidebar.html %}
@@ -24,6 +24,8 @@
       </div>
     </div>
   </div>
+
+  {% include fab.html %}
 
   {% include scripts.html %}
   {% include analytics.html %}

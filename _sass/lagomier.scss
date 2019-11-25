@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   font-size: 16px;
   background-color: white;
@@ -75,21 +71,6 @@ img {
   margin: 0 0 10px 0;
 }
 
-.site .footer {
-  font-size: 80%;
-  color: lighten($body-color, 26%);
-  border-top: 4px solid lighten($body-color, 13.5%);;
-  overflow: hidden;
-}
-
-#bio {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: dotted lighten($body-color, 13.5%);
-  border-width: 1px 0;
-  padding-top: 15px;
-}
-
 #post ul,
 #post ol {
   margin-left: 1.35em;
@@ -106,58 +87,6 @@ img {
   border: none;
 }
 
-.sidebar {
-  display: none;
-
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-  }
-
-  a,
-  a:hover,
-  a:active {
-    text-decoration: none;
-
-    i {
-      width: 1.5em;
-    }
-  }
-
-  nav {
-    margin: 15px 0px;
-    padding-top: 15px;
-    border: dotted #40474f;
-    border-width: 1px 0px 0px 0px;
-  }
-
-  ul {
-    margin: 0px;
-    list-style: none;
-  }
-}
-
-.sidebar > section {
-  position: sticky;
-  top: 32px;
-}
-
-@media (min-width: #{map-get($grid-breakpoints, lg)}) {
-  .sidebar {
-    display: block;
-    padding-top: 25px;
-    padding-right: 40px;
-    font-family: $font-family-base;
-  }
-  
-  .sidebar p {
-    font-weight: 200;
-  }
-  
-  .sidebar a {
-    font-weight: 400;
-  }
-}
-
 .content {
   font: 400 16px/22px $font-family-base;
   padding-top: 25px;
@@ -169,18 +98,6 @@ img {
     border-left: 1px solid #DDD;
     padding-left: 40px;
   }
-}
-
-.footer {
-  width: 100%;
-}
-
-.footer {
-  margin-top: 1em;
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #EEE;
-  overflow: hidden;
 }
 
 .aside {
@@ -197,35 +114,6 @@ img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-}
-
-#stalker {
-  span {
-    display: block;
-  }
-
-  ul {
-    display: inline-block;
-    height: 18px;
-    margin-left: 5px;
-    margin: 0px;
-  
-    a {
-      width: 29px;
-      overflow: hidden;
-      float: left;
-  
-      &:hover {
-        text-decoration: none;
-        color: theme-color("primary");
-      }
-    }
-  
-    i {
-      font-size: 28px;
-      margin-right: 5px;
-    }
-  }
 }
 
 i.fa-hn {
@@ -301,3 +189,7 @@ sup {
     margin-right: 0.5em;
   }
 }
+
+@import "lagomier/sidebar";
+@import "lagomier/fab";
+@import "lagomier/footer";
