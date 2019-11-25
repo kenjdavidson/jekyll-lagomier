@@ -4,3 +4,11 @@ url: http://kenjdavidson.github.io/lagomier
 baseurl: /lagomier
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      permalink: /:year/:month/:day/:title:output_ext

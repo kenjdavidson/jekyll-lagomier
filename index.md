@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: page
 title: Welcome to Lagomier
 ---
-
-# Lagomier
 
 Lovingly based off [Matt Swanson][mds]'s [Lagom][lagom] jekyll theme.
 

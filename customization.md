@@ -1,10 +1,9 @@
 ---
-layout: default
-title: Customization
+layout: page
+title: Customizing Lagmier
 permalink: /customization/
+read_time: 5 min read
 ---
-
-# Customizing Lagomier
 
 The next thing to do is start customizing and adding content to your site.  The following options are available when doing so:
 
@@ -51,6 +50,12 @@ The site logo defaults to the file `/assets/img/logo.png`.  There are a number o
 The fav icon can be updated in much the same ways:
 - Replace `/assets/img/favicon.png` in your own repository.
 - Adding a replacement image and setting the `favicon` entry in `theme.yml`
+
+## Floating Action Button (Mobile Menu)
+
+When on a smaller device (mobile or tablet) the menu will be accessible through the floating action button.  The button can be customized by `/_includes/fab.html` file.  To just change the image displayed, set the `site.data.theme.fab` setting in `/data/theme.yml`.
+
+The image will default to the `/assets/img/logo.png` if not provided.
 
 ## Custom Domain
 

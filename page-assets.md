@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: Page Assets
 permalink: /page-assets/
 ---
-
-# Page Assets
 
 There are a number of standard theme page assets that are provided, they can all be over writen within the `/assets` folder:
 

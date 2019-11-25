@@ -67,25 +67,31 @@ img {
 }
 
 .meta {
-  color: lighten($body-color, 13.5%);;
+  color: lighten($body-color, 20%);
   margin: 0 0 10px 0;
+
+  > * {
+    margin-right: 8px;
+  }
 }
 
-#post ul,
-#post ol {
-  margin-left: 1.35em;
+span.date-iconed::before {
+  content: '\f783';
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 8px;
 }
 
-#post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  font-size: 85%;
-  padding: 0 .2em;
+span.tags-iconed::before {
+  content: '\f02b';
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 8px;
 }
 
-#post pre code {
-  border: none;
-}
+span.read-time-iconed::before {
+  content: '\f017';
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 8px;
+} 
 
 .content {
   font: 400 16px/22px $font-family-base;
@@ -165,31 +171,8 @@ sup {
   font-size: smaller;
 }
 
-// Archive and Categories page styles
-.archive-year {
-  margin-top: 0.5em;
-}
-
-.category-title {
-  margin-top: 0.5em;
-}
-
-.archive-post-item {
-  display: flex;
-
-  .date {
-    &:after {
-      content: "\00BB";      
-    }
-
-    margin-right: 0.5em;
-  }
-
-  .title {
-    margin-right: 0.5em;
-  }
-}
-
 @import "lagomier/sidebar";
 @import "lagomier/fab";
 @import "lagomier/footer";
+@import "lagomier/post";
+@import "lagomier/page";

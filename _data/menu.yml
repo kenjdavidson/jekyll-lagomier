@@ -1,6 +1,9 @@
-- title: Customization
+- name: customization.md
+  title: Customization
   icon: fas fa-edit
-- title: Menu Options
+- name: main-options.md
+  title: Menu Options
   icon: fas fa-bars
-- title: Page Assets
+- name: page-assets.md
+  title: Page Assets
   icon: fas fa-file-alt  
