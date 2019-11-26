@@ -34,7 +34,7 @@ Forking will allow you to make changes as you see fit - if they're changes you t
 - Run the jekyll server: `bundle exec jekyll serve`
 - Modify to your hearts content
 
-You should have a server up and running locally at <http://localhost:4000>.
+You should have a server up and running locally at <{{ 'http://localhost:4000'}}{{'' | relative_url }}>.
 
 ### Remote Theme
 

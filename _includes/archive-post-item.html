@@ -5,7 +5,7 @@
     </span>    
     {% endif %}
     <span class="title link">
-        <a href="{{ include.post.url }}" alt="Link to {{ include.post.title }}">
+        <a href="{{ include.post.url | relative_url }}" alt="Link to {{ include.post.title }}">
             {{ include.post.title }}
         </a>
     </span>

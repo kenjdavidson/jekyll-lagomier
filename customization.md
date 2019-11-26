@@ -5,27 +5,69 @@ permalink: /customization/
 read_time: 5 min read
 ---
 
-The next thing to do is start customizing and adding content to your site.  The following options are available when doing so:
+Next up, you're probably going to want to customize the theme without overriding a lot of files (not cool if you choose to go with another theme), the following customizations are available:
 
 ## Theme.yml
 
-The `_data/theme.yml` file was refactored to only contain textual and graphical configuration for the theme.  Removing or clearing any of the items below will remove them from the output:
+Here is a copy of the current `theme.yml` file, along with comments.  This file should be copied and overridden by your project.  If you switch between themes are are testing themes out, hopefully I've made this easy.
 
 {% highlight markdown %}
+# Theme customization - please change from the defaults!
+
+# "Hi, I'm _______"
+# Changes are displayed in the sidebar/menu
 name: Lagomier User   
 email: test@example.com
 tagline: "Weak opinions, strongly held"
 bio: |
-  A brief bio or comment can be updated within theme.yml - 
-  removing it completely is also possible.    
-logo: # displayed in header
-favicon: # displayed in browser tab
-follow_me: "Follow me:"    
+  A brief bio or comment can be updated within theme.yml - removing it 
+  completely is also possible.
+logo: #http://github.com/username.png - hard coded image URL
+favicon: favicon.png
+
+# Social/Follow me text
+follow_me: "Follow me:"
+
+# Change disclaimer content - removing/clearing will stop the disclaimer
+# from being displayed.  Can be overwritten by adding disclaimer to 
+# page/post front matter
+disclaimer: |
+  The postings on this site are my own and don't necessarily represent my 
+  employer’s positions, strategies or opinions.
+
+# Control display and text on the Archive page
+archive:
+  title: Archive
+  description: |
+    Please browse through my published articles - comments and corrections are
+    always welcome.
+
+# Control display and text on the Categories page
+categories:
+  title: Categories
+  description: |
+    Please browse through my published articles - comments and corrections are
+    always welcome.    
+
+# Toggle link/icon to view atom feed (/atom.xml) in sidebar
+show_atom_feed: true
+
+# Google Analytics key, leave blank to ignore UA-xxxx-x
+google_analytics_key: 
+
+# Date format
+date_format: "%-d %b %Y"
+
+# Configure Disqus comments
+# Site name is configured on your Disqus settings screen.
+disqus:
+  site_name: kenjdavidson
+  title: Discussion & Feedback
 {% endhighlight %}
 
 ## Social.yml
 
-The social section is created by providing any number of social media objects to the `_data/social.yml` configuration file:
+The original social feature was hard coded, where adding a new social link required adding to `theme.yml` and updating the `social.html` file.  I've removed that requirement and provided the new `social.yml` that can accept any number of social links that you have available.  Here is an example of Github and Instagram:
 
 {% highlight markdown %}
 # Social objects require an object to be created
