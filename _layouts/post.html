@@ -22,7 +22,7 @@ layout: default
   </div>
 </section>
 
-{% if page.comments %}
+{% if site.data.theme.disqus.site_name and page.comments %}
 <section id="comments-{{page.name}}" class="commnets">
   {% include disqus.html %}
 </section>
