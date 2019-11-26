@@ -61,7 +61,7 @@ date_format: "%-d %b %Y"
 # Configure Disqus comments
 # Site name is configured on your Disqus settings screen.
 disqus:
-  site_name: kenjdavidson
+  site_name: 
   title: Discussion & Feedback
 {% endhighlight %}
 
